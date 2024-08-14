@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+    <link rel="stylesheet" href="pro.css">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+  
+ <div id="first">
+    <div id="header">
+        <h1>Register</h1>
+    </div>
+    <hr>
+
+    <div id="divForm">
+        <form action="" method="get" id="user-form">
+            <label for="name" >User Name: </label>
+            <input type="text" id="name" placeholder=" Enter your Name">
+            <br>
+            <br>
+    
+            <label for="age">Age: </label>
+            <input type="number" id="age" placeholder=" Enter your Age">
+            <br>
+            <br>
+    
+            <label for="courses">Courses: </label>
+            <select name="course" id="courses" multiple>
+    
+                    <optgroup label="Programming Languages" >
+                    <option value="C"> C</option>
+                    <option value="C++"> C++</option>
+                    <option value="C#">C#</option>
+                    </optgroup>
+    
+                    <optgroup label="FrontEnd">
+                    <option value="html"> HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>  
+                    </optgroup>
+    
+                    <optgroup label="BackEnd">
+                    <option value="SQL">SQL</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value=".NET"> .NET</option>
+                    </optgroup>
+            </select>
+           <br>
+           <br>
+            <button value="add" id="add"><i class="fa-solid fa-plus">Add User</i></button>
+            <br>
+            
+            <button value="delete" id="del1"> <i class="fa-solid fa-trash"> Delete</i></button>
+            <br>
+            <button type="button" id="exit" onclick="window.close()"><i class="fa-solid fa-right-from-bracket">Exit</i></button>
+            
+        </form>
+    </div>
+        <hr>
+    <div id="h1">
+        <h1>Table Data</h1>
+    </div>
+        <br>
+      <div id="table">
+        <table width="100%" id="user-table">
+           <thead>
+            <tr  width="100%" >
+                <td width="50%" align="center" >Name</td>
+                <td width="30%" align="center" >Age</td>
+                <td width="10%" align="center" >courses</td>
+                <td width="10%" align="center" >Action </td>
+                
+            </tr>
+           </thead>
+           <tbody id="user-tbody">
+
+           </tbody>
+        </table>
+      </div>
+      <br>
+      
+    
+      <button id="deleteAll"><i class="fa-solid fa-trash"> Delete All</i> </button>
+        
+ </div>
+
+    <script src="pro.js"></script>
+</body>
+</html>
